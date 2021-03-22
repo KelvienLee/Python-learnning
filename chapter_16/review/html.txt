@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>å¾®åå°ä¹</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <!-- <link href="style.css" rel="stylesheet" type="text/css" />  -->
+  <!-- <style>
+    nav.pos_fixed
+    {
+      position:fixed;
+      top:30px;
+      right:5px;
+    }
+    </style> -->
+
+    <style>
+      div.topmenu
+        {
+        width: 100%;
+        position:fixed;
+        left:0px;
+        right:0px;
+        top: 0px;
+        margin: auto;
+        /* right:5px; */
+        }
+        ul.topmenu {
+            list-style-type: none;
+            margin: auto;
+            padding: 0;
+            overflow: hidden;
+            background-color: #21be70;
+        }
+        
+        li.topmenu {
+            width: 33.33%;
+            float: left;
+        }
+        
+        li.topmenu a, .dropbtn {
+            width: 100%;
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li.topmenu a:hover, .dropdown:hover, .dropbtn {
+            background-color: #345e4e;
+        }
+        
+        .dropdown {
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+      div.bottominfo
+        {
+        width: 100%;
+        position:relative;
+        left:0px;
+        bottom:0px;
+        margin: auto;
+        /* right:5px; */
+        }
+        ul.bottominfo {
+            list-style-type: none;
+            margin: auto;
+            padding: 0;
+            overflow: hidden;
+            background-color: #3f3f3f;
+        }
+        
+        li.bottominfo {
+            width: 50%;
+            float: left;
+        }
+        
+        li.bottominfo a, .dropbtn {
+            width: 100%;
+            display: inline-block;
+            color: white;
+            /* text-align: center; */
+            padding: 8px;
+            text-decoration: none;
+        }
+        a.test_r{
+          text-align: right;
+        }
+        a.test_l{
+          text-align: left;
+        }
+      </style>
+
+
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      // subMaxLevel: 2,
+      name: 'é¦é¡µ',
+      homepage: 'home.md',
+      coverpage: true,
+      coverpage: 'coverpage.md',
+      loadSidebar: false,
+      // loadSidebar: 'sidebar.md',
+      // autoHeader: true,
+      loadNavbar: false,
+      // loadNavbar: 'navbar.md',
+      hideSidebar: true,
+      // å°å±è®¾å¤ä¸åå¹¶å¯¼èªæ å°ä¾§è¾¹æ ã
+      mergeNavbar: true,
+      notFoundPage: 'my404.md',
+      topMargin: 50, // default: 0
+      externalLinkTarget: '_self', // default: '_blank'
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script> -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-python.js"></script>
+  <div class="topmenu">
+    <ul class="topmenu">
+      <li class="topmenu"><a class="active" href="http://47.108.136.102/Python/index.html">Python</a></li>
+      <li class="topmenu"><a href="http://47.108.136.102/Ae/index.html">AE</a></li>
+      <li class="topmenu"><a href="http://47.108.136.102/Others/index.html">Others</a></li>
+      <!-- <div class="dropdown">
+        <a href="#" class="dropbtn">ä¸æèå</a>
+        <div class="dropdown-content">
+          <a href="#">é¾æ¥ 1</a>
+          <a href="#">é¾æ¥ 2</a>
+          <a href="#">é¾æ¥ 3</a>
+        </div>
+      </div> -->
+    </ul>
+  </div>
+
+  <div class="bottominfo">
+    <ul class="bottominfo">
+      <li class="bottominfo">
+        <a class="test_r"
+        href="https://beian.miit.gov.cn">èICPå¤2021003946å·</a>
+      </li>
+      <li class="bottominfo">
+        <a class="test_l"
+        target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51342502000041"><img src="http://47.108.136.102/Pictures/beian.png" style="float:left;"/>&nbsp;&nbsp;&nbsp;&nbsp;å·å¬ç½å®å¤ 51342502000041å·</a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
